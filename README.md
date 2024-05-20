@@ -16,3 +16,17 @@ Then run the server:
 cd src
 uvicorn main:app --host 0.0.0.0 --reload
 ```
+
+## Run with Docker
+
+1. Build the image
+
+```bash
+docker build -t my-rest-image .  
+```
+
+2. Run the newly created image
+
+```bash
+docker run -d --name my-rest-service -p 8000:8000 my-rest-image 
+```
