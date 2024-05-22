@@ -1,2 +1,3 @@
 fastapi<1.0.0
 uvicorn<1.0.0
+redis
